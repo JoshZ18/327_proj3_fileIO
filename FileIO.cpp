@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
 #include "../327_proj3_test/includes/FileIO.h"
 #include "../327_proj3_test/includes/constants.h"
 
@@ -65,7 +66,5 @@ int KP_FileIO::writeVectortoFile(const std::string filename, std::vector<std::st
 		return SUCCESS;
 	}
 
-	return COULD_NOT_OPEN_FILE_TO_READ;
+	return COULD_NOT_OPEN_FILE_TO_WRITE;
 }
-
-
